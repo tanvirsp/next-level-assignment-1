@@ -12,9 +12,9 @@ const reverseString = (str: string): string => {
 type StringOrNumber = string | number;
 const checkType = (input: StringOrNumber): string => {
   if (typeof input === "string") {
-    return "String";
+    return `"String";`;
   } else {
-    return "Number";
+    return `"Number";`;
   }
 };
 
@@ -22,6 +22,8 @@ const checkType = (input: StringOrNumber): string => {
 const getProperty = <X>(obj: X, key: keyof X) => {
   return obj[key];
 };
+
+const user = { id: 1, name: "John Doe", age: 21 };
 
 //Problem 5:
 interface Book {
